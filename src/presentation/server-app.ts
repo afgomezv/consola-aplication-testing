@@ -1,4 +1,3 @@
-import { log } from "console";
 import { CreateTable } from "../domain/use-cases/create-table.use-case";
 import { SaveFile } from "../domain/use-cases/save-file.use-case";
 
@@ -30,7 +29,7 @@ export class ServerApp {
     if (showTable) console.log(table);
 
     wasCreated
-      ? console.log("File created")
+      ? console.log("File created!")
       : console.error("File not created");
   }
 }

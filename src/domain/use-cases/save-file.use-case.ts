@@ -22,11 +22,11 @@ export class SaveFile implements SaveFileCase {
   }: Options): boolean {
     try {
       fs.mkdirSync(fileDestination, { recursive: true });
-      fs.writeFileSync(`${fileDestination}/tabla-${fileName}.txt`, fileContent);
-      console.log("Tabla generada correctamente");
+      fs.writeFileSync(`${fileDestination}/${fileName}.txt`, fileContent);
+      //console.log("Tabla generada correctamente");
       return true;
     } catch (error) {
-      console.error(error);
+      //console.error(error); //winston
       return false;
     }
   }

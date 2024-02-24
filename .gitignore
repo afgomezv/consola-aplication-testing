@@ -1,2 +1,9 @@
 /node_modules
-/packages.
+/packages
+
+dist/
+outputs/
+
+custom-outputs/
+test-destination/
+coverahe/
